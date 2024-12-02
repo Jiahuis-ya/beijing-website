@@ -1,0 +1,192 @@
+/* 清除默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  ul li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  .inner {
+    margin: 0 auto;
+  }
+  .inner_hd {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 20px 0;
+  }
+  .inner_hd h2 {
+    font-size: 36px;
+    color: #313131;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+  }
+  h2 img {
+    position: absolute;
+  }
+  h2 .hd_left {
+    left: -20px;
+    top: 16px;
+  }
+  h2 .hd_right {
+    right: -20px;
+    top: 2px;
+  }
+
+  body {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .container .inner {
+    height: 100%;
+  }
+  
+  .box {
+    padding: 30px 0;
+    flex: 1;
+  }
+ 
+  .item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .item li {
+    width: 20%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 10px 30px 10px;
+  }
+  .item li .img_box {
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .img_box img {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .item li h2 {
+    font-size: 15px;
+    color: #515151;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 45px;
+    text-align: center;
+  }
+  .item li .bottom_box {
+    padding: 0 10px;
+  }
+  .item li .bottom_box span {
+    width: 42px;
+    color: #919191;
+  }
+  .item li .bottom_box p {
+    width: auto;
+    float: right;
+    background: url(../images/icon.jpg) no-repeat left center;
+    padding-left: 20px;
+    color: #919191;
+  }
+
+  .inner_box:hover .img_box img{
+    transform: scale(1.2);
+  }
+  
+  .inner_box:hover h2 {
+    font-weight: bold;
+  }
+
+  /* 超小屏幕（小于576px） */
+  @media screen and (max-width: 575px) {
+    .inner {
+      width: 75%;
+    }
+    .inner_hd {
+      padding: 30px 0;
+    }
+    .item li {
+      width:100%;
+    }
+    .inner_hd h2 { 
+      font-size: 26px;
+    }
+    .item li .img_box {
+      height: auto;
+    }
+  }
+  /* 小屏幕（大于等于576px） */
+  @media screen and (min-width: 576px) {
+    .inner {
+      width: 540px;
+    }
+    .item li {
+      width:50%;
+    }
+    .inner_hd h2 {
+      font-size: 30px;
+    }
+    .item li .img_box {
+      height: 170px;
+    }
+  }
+  /* 中等屏幕（大于等于768px） */
+  @media screen and (min-width: 768px) {
+    .inner {
+      width: 720px;
+    }
+    .item li {
+      width:33.3%;
+    }
+    .item li .img_box {
+      height: 145px;
+    }
+  }
+  /* 大屏幕（大于等于992px） */
+  @media screen and (min-width: 992px) {
+    .inner {
+      width: 960px;
+    }
+    .item li {
+      width:25%;
+    }
+    .item li .img_box {
+      height: 145px;
+    }
+  }
+  /* 超大屏幕（大于等于1200） */
+  @media screen and (min-width: 1200px) {
+    .inner {
+      width: 1200px;
+    }
+    .item li {
+      width:20%;
+    }
+    .item li .img_box {
+      height: 145px;
+    }
+  }

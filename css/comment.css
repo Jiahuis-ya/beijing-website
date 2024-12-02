@@ -1,0 +1,108 @@
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+body {
+    background: #333;
+    background-color: #fff;
+}
+
+textarea {
+    min-height: 145px;
+    resize: none;
+}
+
+input,
+textarea{
+    background-color: #efefee!important;
+    border: 1px solid transparent!important;
+}
+
+.comment_container {
+    height: 100vh;
+}
+
+.my-submit-button {
+    width: 100%;
+    background: linear-gradient(90deg,#2db7f5,#6bc30d);
+    color: #fff;
+    border-color: #6bc30d;
+    opacity: .9;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: none!important;
+}
+.my-submit-button:focus {
+    border-color: #6bc30d!important;
+    box-shadow: none!important;
+}
+
+
+  /* 超小屏幕（小于576px） */
+  @media screen and (max-width: 575px) {
+    .wrapper {
+        padding: 2rem 1rem 1rem;
+     }
+  }
+  /* 小屏幕（大于等于576px） */
+  @media screen and (min-width: 576px) {
+    .wrapper {
+        padding: 2rem 1rem 1rem;
+     }
+  }
+  /* 中等屏幕（大于等于768px） */
+  @media screen and (min-width: 768px) {
+    .wrapper {
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px #999;
+        left: 50%;
+        overflow: hidden;
+        padding: 3.8rem 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: transform .3s,box-shadow .3s;
+        width: 500px;
+        background: rgba(255,255,255,.8);
+        box-sizing: border-box;
+    }
+  }
+  /* 大屏幕（大于等于992px） */
+  @media screen and (min-width: 992px) {
+    .wrapper {
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px #999;
+        left: 50%;
+        overflow: hidden;
+        padding: 3.8rem 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: transform .3s,box-shadow .3s;
+        width: 500px;
+        background: rgba(255,255,255,.8);
+        box-sizing: border-box;
+    }
+  }
+  /* 超大屏幕（大于等于1200） */
+  @media screen and (min-width: 1200px) {
+    .wrapper {
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px #999;
+        left: 50%;
+        overflow: hidden;
+        padding: 3.8rem 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: transform .3s,box-shadow .3s;
+        width: 500px;
+        background: rgba(255,255,255,.8);
+        box-sizing: border-box;
+    }
+  }

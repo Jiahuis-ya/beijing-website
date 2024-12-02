@@ -1,0 +1,170 @@
+.my-container {
+    background-image: url("../assets/images/view/view_1.webp");
+    background-repeat: no-repeat;
+}
+
+  /* 轮播图开始 */
+  .my-swiper {
+    /* max-width: 400px; 
+    max-height: 800px; */
+    overflow: hidden;
+    height: 100%;
+    width: 60%;
+  }
+
+  .my-swiper img {
+    /* max-width: 1440px;  */
+    /* max-height: 600px;   */
+    /* min-height: 155px; */
+    height: 100%;
+  }
+  /* 轮播图结束 */
+
+.view_container {
+  height: 100vh;
+  padding: 2.5vw 6vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-item,
+.carousel-inner {
+  height: 100%;
+}
+
+.my_detail {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 8px 64px 0 rgba(0,0,0,0.04),0 1px 4px 0 rgba(0,0,0,0.02);
+  overflow-y: auto;
+}
+
+.introduce {
+  color: #666;
+}
+
+.view_name {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.view_name:nth-child(1) {
+  margin-top: 0;
+}
+
+  /* 超小屏幕（小于576px） */
+  @media screen and (max-width: 575px) {
+    .carousel-control-next-icon {
+      border: 1px solid #f00;
+    }
+    .view_container {
+      flex-direction: column;
+    }
+
+    .my-swiper {
+      width: 100%;
+      max-height: 370px;
+      border-radius: 6px;
+    }
+
+    .my-swiper img {
+      width: 70%!important;
+      margin: 0 auto;
+    }
+  
+  }
+  /* 小屏幕（大于等于576px） */
+  @media screen and (min-width: 576px) {
+    .carousel-control-next-icon {
+      border: 1px solid green;
+    }
+    .view_container {
+      flex-direction: column;
+      padding: 2.5vw 10vw;
+    }
+
+    .my-swiper {
+      width: 100%;
+      height: 370px;
+      border-radius: 6px;
+    }
+    .my-swiper img {
+      width: 70%!important;
+      margin: 0 auto;
+    }
+  }
+  /* 中等屏幕（大于等于768px） */
+  @media screen and (min-width: 768px) {
+    .view_container {
+      flex-direction: row;
+      padding: 2.5vw 10vw;
+    }
+
+    .my-swiper {
+      width: 60%;
+      height: 100%;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .my-swiper img {
+      width: 100%!important;
+      margin: 0;
+    }
+  }
+  /* 大屏幕（大于等于992px） */
+  @media screen and (min-width: 992px) {
+    .view_container {
+      flex-direction: row;
+      padding: 2.5vw 10vw;
+      
+    }
+    .my-swiper {
+      width: 60%;
+      height: 100%;
+      border-radius: 6px 0 0 6px;
+    }
+    .my-swiper img {
+      width: 100%!important;
+      margin: 0;
+    }
+  }
+  /* 超大屏幕（大于等于1200） */
+  @media screen and (min-width: 1200px) {
+    .view_container {
+      flex-direction: row;
+      padding: 2.5vw 16vw;
+      border-radius: 6px 0 0 6px;
+      
+    }
+    .my-swiper {
+      width: 60%;
+      height: 100%;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .my-swiper img {
+      width: 100%!important;
+      margin: 0;
+    }
+  }
+
+.my_arrow_icon{
+  background: rgba(64,64,64,0.25);
+  border-radius: 50%;
+}
+
+.carousel-indicators li {
+  border-color: #fff!important;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+}
+  
+
+
+
